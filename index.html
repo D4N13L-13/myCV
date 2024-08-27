@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyCV</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .navbar-brand {
+                font-weight: bold;
+            }
+            .header-title {
+                margin-top: 1rem;
+            }
+            .wrapper{
+                display:grid;
+                grid-template-columns: 24% 50% 24%;
+                grid-gap: 1em;
+                border: 3px solid #000000;
+                padding: 1em;
+            }
+
+            .sub_left{
+                display:grid;
+                grid-template-rows: 50% 50%;
+            }
+
+            .wrapper > div{
+                background:#ffffff;
+                padding:1em;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: #ddd;
+            }
+
+            .container{
+                position: relative;
+                width: 100%;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #5a7bd4;
+            }
+
+            .hoverText{
+                text-align: Center;
+                text-align: Horizontal;
+                font-size: 3cap; 
+                border: 15cap #000000;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow',
+                Arial, sans-serif,
+            }
+
+            .container:hover .overlay {
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header Section -->
+        <header class="bg-primary text-Black text-center py-1">
+            <div class="container" style="border-bottom: 5px solid #000000;">
+                <h1 class="display-5 header-title">Daniel Holyoak</h1>
+            </div>
+        </header>
+
+        <!-- Body -->
+        <div class = "wrapper">
+            <div class="sub_left">
+                <div>
+                    <div class = "container">
+                        <img src="resources/photo_of_me.JPG" 
+                        alt="Photo of me"
+                        width = 300>
+                        <div class="overlay">
+                            <div class="hoverText">
+                                How Handsome!
+                            </div>
+                        </div>
+
+                    </div>
+                    <h4><u><b>Links:</b></u></h4>
+                    <ul>
+                        <li><a
+                        href="resources\GRADE_12_REPORT.pdf" target="_blank">Grade 12 Report
+                        </a></li>
+                    </ul>
+                    <h4><u><b>Contact Details:</b></u></h4>
+                    <u>Phone number:</u> <br> (082)650-9858
+                    <br>
+                    <u>Email:</u><br>danielholyoak9@gmail.com
+                </div>
+            </div>
+            <div>
+                <h2><u> About Me:</u></h2>
+                    High-school graduate, current gap-year taker with a
+                    late night job and at least R3 in my bank account at
+                    all times. I take a great interest in coding and
+                    I.T. in general. I plan to study BsC I.T. at
+                    North-West University in 2025.
+
+                <h2><u>My Skills:</u></h2>
+                <ul>
+                    <li><u>Excellent People Skills:</u><br>
+                        Acquired through my job of waiting as I constantly served and
+                        interacted with people(pleasant, impatient and
+                        unreasonable).
+                    </li>
+                    <li><u>Computer Literate:</u><br>
+                        Through taking I.T. at school, The software
+                        engineering course and general use of technology in
+                        my day-to-day life, I can do anything you require on
+                        a computer with ease.
+                    </li>
+                    <li><u>A real hankering for the outdoors:</u><br>
+                        Despite my interest in computers I still find
+                        time and the desire to spend my time with
+                        friends and family outdoors exploring
+                    </li>
+                </ul>
+                <h2><u>My Work Experience:</u></h2>
+                <ul>
+                    <li>2024 - now: Village Bistro Waiter</li>
+                </ul>
+                <h2><u>My Education:</u></h2>
+                <ul>
+                    <li>2005 - 2010: Babbel en Krabbel Nursery</li>
+                    <li>2011 - 2017: Laerskool DoringKloof Primary
+                    School</li>
+                    <li>2017 - 2023: Cornwall Hill College</li>
+                    <li>2024 - Current: Software Engineering Bootcamp</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
